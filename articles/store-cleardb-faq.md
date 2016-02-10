@@ -55,7 +55,7 @@ The default database option is Titan, which is $3.50. We don’t show the cost d
 
 ## I am running MySQL on my own Azure virtual machine. Can I connect my Azure web app to my database?
 
-Yes. You can connect your web app to your database as long as your Azure VM has given remote access to you web app. For details click here.
+Yes. You can connect your web app to your database as long as your Azure VM has given remote access to you web app. For details click [here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-mysql-windows-server-2008r2/).
 
 ## In which countries are ClearDB Premium MySQL clusters supported?
 
@@ -112,6 +112,15 @@ Access to Azure Marketplace for third party services can be managed by your EA A
 
 Contact [Enterprise Customer Support](http://aka.ms/AzureEntSupport) with regards to billing under their EA enrollment. The EA Portal Support Team will answer your question or help resolve your issue.
 
+## Can I create additional users for my ClearDB MySQL database cluster solution?
+
+No. You cannot create additional users but you can create additional databases on your ClearDB database cluster. 
+
+## When I migrate my resources from one subscription to another , does ClearDB  MySQL database get migrated as well?
+
+When you perform resource migration across subscriptions , some [limitations](https://azure.microsoft.com/en-us/documentation/articles/app-service-move-resources/) apply. ClearDB MySQL database is third party service and hence does not get migrated during Azure subscription migration. If you do not manage the migration of your MySQL database prior to migrating azure resources your ClearDB  MySQL databases can be disabled. Manually migrate your databases first and then perform Azure subscription migration for your web app. 
+
 ## More information
 
 [Azure Marketplace FAQ](/marketplace/faq/)
+
