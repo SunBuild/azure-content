@@ -120,6 +120,15 @@ Access to Azure Marketplace for third party services can be managed by your EA A
 
 Contact [Enterprise Customer Support](http://aka.ms/AzureEntSupport) with regards to billing under their EA enrollment. The EA Portal Support Team will answer your question or help resolve your issue.
 
+## Can Basic/Pro series databases be upgraded in-place similar to Planetary plans today on ClearDB portal?
+
+Yes, Basic series databases can be upgraded in-place (Basic 60 through Basic 500). Pro series can be upgraded in-place (Pro 125 through Pro 1000) with the exception of Pro 60. We do not support upgrading Pro 60 database currently. 
+
+## I can’t see my CleardB database in Azure portal ?
+
+if we create ClearDB database using Azure resource Manager or [new azure portal] (https://portal.azure.com) , it will not be visible in the [old azure portal](https://manage.windowsazure.com). To workaround this is to linking your database manually to the web app. Similarly if create ClearDB database in the [old portal](https://manage.windowsazure.com) you will not be able to see your database in the [new azure portal] (https://portal.azure.com).There is no workaround for the latter scenario.
+
+
 ## More information
 
 [Azure Marketplace FAQ](/marketplace/faq/)
